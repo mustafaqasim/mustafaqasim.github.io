@@ -6,15 +6,63 @@ body {
     padding: 0;
 }
 
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+    border-radius: 8px;
+}
+
 h1 {
     text-align: center;
     color: #333;
     font-size: 2em;
     font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.activity-log {
+    list-style: none;
+    padding: 0;
+}
+
+.activity-log li {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.talk {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .talk p {
     margin: 0;
     flex: 1;
-    font-weight: 400;
+    line-height: 1.6; /* Increased line height for better readability */
+}
+
+.talk img {
+    max-width: 150px;
+    max-height: 100px;
+    margin-left: 20px;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .talk {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .talk img {
+        margin-left: 0;
+        margin-top: 10px;
+        max-width: 100%;
+    }
 }
